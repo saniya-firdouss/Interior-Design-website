@@ -1,0 +1,819 @@
+/* =========================
+RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  }
+  
+  body{
+  font-family:'Inter', sans-serif;
+  background:#f5f1eb;
+  color:#111;
+  overflow-x:hidden;
+  }
+  
+  /* =========================
+  NAVBAR
+  ========================= */
+  
+  .navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  
+  padding:30px 7%;
+  
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+  transition:all 0.4s ease;
+  
+  z-index:1000;
+  }
+  
+  .logo{
+  font-size:28px;
+  letter-spacing:3px;
+  font-family:'Cormorant Garamond', serif;
+  
+  color:white;
+  
+  cursor:default;
+  user-select:none;
+  }
+  
+  .nav-links{
+  display:flex;
+  gap:40px;
+  
+  list-style:none;
+  }
+  
+  .nav-links a{
+  text-decoration:none;
+  color:white;
+  
+  font-size:14px;
+  letter-spacing:1px;
+  }
+  
+  /* =========================
+  SCROLLED NAVBAR
+  ========================= */
+  
+  .navbar.scrolled .logo{
+  color:#111;
+  }
+  
+  .navbar.scrolled .nav-links a{
+  color:#111;
+  }
+  
+  /* =========================
+  MOBILE NAV
+  ========================= */
+  
+  .mobile-nav{
+  display:none;
+  }
+  
+  /* =========================
+  HERO
+  ========================= */
+  
+  .hero{
+  position:relative;
+  
+  width:100%;
+  height:120vh;
+  }
+  
+  .hero-image-wrapper{
+  position:sticky;
+  top:0;
+  
+  width:100%;
+  height:100vh;
+  
+  overflow:hidden;
+  }
+  
+  .hero-image{
+  width:100%;
+  height:100%;
+  
+  object-fit:cover;
+  
+  transform:scale(1.1);
+  }
+  
+  .overlay{
+  position:absolute;
+  inset:0;
+  
+  background:rgba(0,0,0,0.35);
+  
+  z-index:1;
+  }
+  
+  /* =========================
+  HERO TEXT
+  ========================= */
+  
+  .hero-overlay-text{
+  position:absolute;
+  
+  left:7%;
+  bottom:15%;
+  
+  z-index:5;
+  
+  color:white;
+  
+  pointer-events:none;
+  }
+  
+  .hero-overlay-text button{
+  pointer-events:auto;
+  }
+  
+  .subtitle{
+  margin-bottom:20px;
+  
+  font-size:14px;
+  letter-spacing:2px;
+  
+  text-transform:uppercase;
+  }
+  
+  .hero-overlay-text h1{
+  margin-bottom:30px;
+  
+  font-size:90px;
+  line-height:0.95;
+  font-weight:500;
+  
+  font-family:'Cormorant Garamond', serif;
+  }
+  
+  .hero-overlay-text button{
+  padding:16px 32px;
+  
+  border:none;
+  border-radius:50px;
+  
+  background:white;
+  color:black;
+  
+  cursor:pointer;
+  
+  transition:0.4s ease;
+  }
+  
+  .hero-overlay-text button:hover{
+  background:black;
+  color:white;
+  }
+  
+  /* =========================
+  GLOBAL SECTIONS
+  ========================= */
+  
+  .section{
+  padding:80px 7%;
+  }
+  
+  .section-subtitle{
+  margin-bottom:15px;
+  
+  font-size:13px;
+  letter-spacing:2px;
+  
+  text-transform:uppercase;
+  
+  color:#777;
+  }
+  
+  /* =========================
+  ABOUT
+  ========================= */
+  
+  .about{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:100px;
+  
+  align-items:center;
+  }
+  
+  .about h2{
+  font-size:60px;
+  line-height:1;
+  font-weight:500;
+  
+  font-family:'Cormorant Garamond', serif;
+  }
+  
+  .about p{
+  font-size:16px;
+  line-height:1.8;
+  
+  color:#444;
+  }
+  
+  /* =========================
+  ABOUT BANNER
+  ========================= */
+  
+  .about-banner{
+  position:relative;
+  
+  width:100%;
+  height:110vh;
+  
+  padding:0;
+  
+  overflow:hidden;
+  }
+  
+  .about-banner-image{
+  width:100%;
+  height:100%;
+  
+  object-fit:cover;
+  }
+  
+  /* =========================
+  ABOUT OVERLAY
+  ========================= */
+  
+  .about-overlay{
+  position:absolute;
+  
+  top:50%;
+  left:50%;
+  
+  transform:translate(-50%, -50%);
+  
+  width:700px;
+  
+  padding:70px;
+  
+  background:rgba(245, 241, 235, 0.92);
+  
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  
+  border-radius:10px;
+  
+  text-align:center;
+  }
+  
+  .about-tag{
+  margin-bottom:20px;
+  
+  font-size:13px;
+  letter-spacing:2px;
+  
+  text-transform:uppercase;
+  
+  color:#777;
+  }
+  
+  .about-overlay h2{
+  margin-bottom:30px;
+  
+  font-size:68px;
+  line-height:0.95;
+  font-weight:500;
+  
+  font-family:'Cormorant Garamond', serif;
+  }
+  
+  .about-description{
+  font-size:17px;
+  line-height:1.9;
+  
+  color:#444;
+  }
+  
+  .about-btn{
+  margin-top:35px;
+  padding:16px 32px;
+  
+  border:none;
+  border-radius:50px;
+  
+  background:black;
+  color:white;
+
+  font-size:14px;
+  
+  cursor:pointer;
+  
+  transition:0.4s ease;
+  }
+  .about-btn a{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .about-btn:hover{
+  background:#666;
+  color:#111;
+  }
+  
+  /* =========================
+  PROPERTIES
+  ========================= */
+  
+  .properties{
+  position:relative;
+  overflow:hidden;
+  }
+  
+  .properties-top{
+  margin-bottom:70px;
+  }
+  
+  .properties-top h2{
+  font-size:72px;
+  line-height:1;
+  
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  }
+  
+  /* =========================
+  PROPERTY SLIDER
+  ========================= */
+  
+  .property-slider{
+  overflow-x:auto;
+  overflow-y:hidden;
+  
+  scrollbar-width:none;
+  
+  cursor:grab;
+  scroll-behavior:smooth;
+  }
+  
+  .property-slider::-webkit-scrollbar{
+  display:none;
+  }
+  
+  .slider-track{
+  display:flex;
+  gap:30px;
+  
+  width:max-content;
+  }
+  
+  /* =========================
+  PROPERTY CARD
+  ========================= */
+  
+  .property-card{
+  width:420px;
+  flex-shrink:0;
+  }
+  
+  .property-card img{
+  width:100%;
+  height:550px;
+  
+  object-fit:cover;
+  
+  border-radius:18px;
+  
+  transition:0.8s ease;
+  }
+  
+  .property-card:hover img{
+  transform:scale(1.05);
+  }
+  
+  .property-info{
+  padding-top:20px;
+  }
+  
+  .property-info h3{
+  margin-bottom:8px;
+  
+  font-size:28px;
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  }
+  
+  .property-info p{
+  font-size:15px;
+  color:#666;
+  }
+  
+  /* =========================
+  CATEGORIES
+  ========================= */
+  
+ .category{
+  padding: 25px;
+ }
+ .category h1{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+ }
+  
+  .category-block{
+  margin-bottom:40px;
+  padding-bottom:20px;
+  
+  border-bottom:1px solid rgba(17,17,17,0.08);
+  }
+  
+  .category-block:last-child{
+  border-bottom:none;
+  padding-bottom:0;
+  }
+  
+  .category-info{
+  margin-bottom:50px;
+  max-width:700px;
+  }
+  
+  .category-info h3{
+  margin-top:30px;
+  
+  font-size:32px;
+  line-height:1;
+  
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  }
+  
+  .category-info p{
+  font-size:15px;
+  line-height:1.8;
+  
+  color:#555;
+  }
+  
+  /* =========================
+  PROJECT GRID
+  ========================= */
+  
+  .projects-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  
+  gap:35px;
+  }
+  
+  .project-card{
+  overflow:hidden;
+  }
+  
+  .project-card a{
+  text-decoration:none;
+  }
+  
+  .project-card img{
+  width:100%;
+  height:300px;
+  
+  object-fit:cover;
+  
+  border-radius:18px;
+  
+  cursor:pointer;
+  
+  transition:0.8s ease;
+  }
+  
+  .project-card:hover img{
+  transform:scale(1.05);
+  }
+  
+  .project-card h4{
+  margin-top:18px;
+  
+  font-size:20px;
+  line-height:1.2;
+  
+  color:#111;
+  
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  
+  cursor:pointer;
+  }
+
+   
+  /* =========================
+     MAP
+  ========================= */
+  
+  .map-top{
+    margin-bottom:50px;
+  }
+  
+  .map-top h2{
+    font-size:60px;
+  
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+  }
+  
+  .map-wrapper{
+    width:100%;
+    height:500px;
+  
+    overflow:hidden;
+  
+    border-radius:24px;
+  }
+  
+  .map-wrapper iframe{
+    width:100%;
+    height:100%;
+  
+    border:none;
+  }
+  
+  /* =========================
+   ENDING CTA
+========================= */
+
+.ending-cta{
+  position:relative;
+
+  padding:180px 7%;
+
+  text-align:center;
+
+  background:#f5f1eb;
+
+  overflow:hidden;
+}
+
+
+/* TAG */
+
+.ending-tag{
+  margin-bottom:25px;
+
+  font-size:13px;
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  color:#777;
+}
+
+
+/* TITLE */
+
+.ending-cta h2{
+  margin-bottom:35px;
+
+  font-size:82px;
+  line-height:1;
+
+  font-weight:500;
+
+  font-family:'Cormorant Garamond', serif;
+
+  color:#111;
+}
+
+
+/* DESCRIPTION */
+
+.ending-description{
+  max-width:700px;
+
+  margin:auto auto 50px;
+
+  font-size:18px;
+  line-height:1.9;
+
+  color:#555;
+}
+
+
+/* =========================
+   WHATSAPP BUTTON
+========================= */
+
+.whatsapp-btn{
+  width:fit-content;
+
+  margin:auto;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+
+  padding:18px 34px;
+
+  border-radius:60px;
+
+  background:#111;
+  color:white;
+
+  text-decoration:none;
+
+  box-shadow:0 15px 40px rgba(0,0,0,0.12);
+
+  transition:0.4s ease;
+}
+
+
+/* ICON */
+
+.whatsapp-btn img{
+  width:22px;
+  height:22px;
+
+  object-fit:contain;
+}
+
+
+/* HOVER */
+
+.whatsapp-btn:hover{
+  transform:translateY(-4px);
+
+  box-shadow:0 20px 50px rgba(0,0,0,0.18);
+}
+  
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  position:relative;
+
+  padding:140px 7% 50px;
+
+  background:#111;
+
+  overflow:hidden;
+}
+
+
+/* BIG BACKGROUND TEXT */
+
+.footer-bg-text{
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%, -50%);
+
+  font-size:220px;
+  font-weight:600;
+
+  font-family:'Cormorant Garamond', serif;
+
+  color:rgba(255,255,255,0.03);
+
+  pointer-events:none;
+
+  white-space:nowrap;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.footer-top{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+
+  gap:60px;
+}
+
+
+/* BRAND */
+
+.footer-brand h2{
+  margin-bottom:20px;
+
+  font-size:42px;
+  letter-spacing:3px;
+
+  color:white;
+
+  font-family:'Cormorant Garamond', serif;
+}
+
+.footer-brand p{
+  max-width:400px;
+
+  font-size:16px;
+  line-height:1.8;
+
+  color:rgba(255,255,255,0.7);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links,
+.footer-contact,
+.footer-socials{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-socials h4{
+  margin-bottom:10px;
+
+  font-size:14px;
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  color:rgba(255,255,255,0.4);
+}
+
+
+/* FOOTER LINKS */
+
+.footer a{
+  position:relative;
+
+  width:fit-content;
+
+  text-decoration:none;
+
+  color:white;
+
+  transition:0.4s ease;
+}
+
+
+/* UNDERLINE ANIMATION */
+
+.footer a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-4px;
+
+  width:0%;
+  height:1px;
+
+  background:white;
+
+  transition:0.4s ease;
+}
+
+.footer a:hover::after{
+  width:100%;
+}
+
+.footer a:hover{
+  opacity:0.7;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom{
+  position:relative;
+  z-index:2;
+
+  margin-top:120px;
+  padding-top:30px;
+
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.footer-bottom p{
+  color:rgba(255,255,255,0.5);
+
+  font-size:14px;
+}

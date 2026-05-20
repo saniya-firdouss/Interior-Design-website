@@ -1,0 +1,454 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  body{
+    font-family:'Inter', sans-serif;
+    background:#f5f1eb;
+    color:#111;
+    overflow-x:hidden;
+  }
+  
+  
+  /* =========================
+     NAVBAR
+  ========================= */
+  
+  .navbar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+  
+    padding:30px 7%;
+  
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  
+    z-index:1000;
+  }
+  
+  .logo{
+    font-size:28px;
+    letter-spacing:3px;
+  
+    font-family:'Cormorant Garamond', serif;
+  
+    color:white;
+  }
+  
+  .nav-links{
+    display:flex;
+    gap:40px;
+  
+    list-style:none;
+  }
+  
+  .nav-links a{
+    text-decoration:none;
+    color:white;
+  
+    font-size:14px;
+  }
+  
+  .mobile-nav{
+    display:none;
+  }
+  
+  
+  /* =========================
+     HERO
+  ========================= */
+  
+  .contact-hero{
+    position:relative;
+  
+    width:100%;
+    height:100vh;
+  
+    overflow:hidden;
+  }
+  
+  .contact-hero img{
+    width:100%;
+    height:100%;
+  
+    object-fit:cover;
+  }
+  
+  .overlay{
+    position:absolute;
+    inset:0;
+  
+    background:rgba(0,0,0,0.45);
+  }
+  
+  .contact-hero-content{
+    position:absolute;
+  
+    left:7%;
+    bottom:15%;
+  
+    z-index:5;
+  
+    color:white;
+  }
+  
+  .contact-hero-content p{
+    margin-bottom:20px;
+  
+    font-size:14px;
+    letter-spacing:2px;
+  
+    text-transform:uppercase;
+  }
+  
+  .contact-hero-content h1{
+    font-size:90px;
+    line-height:0.95;
+  
+    font-weight:500;
+  
+    font-family:'Cormorant Garamond', serif;
+  }
+  
+  
+  /* =========================
+     GLOBAL SECTION
+  ========================= */
+  
+  .section{
+    padding:100px 7%;
+  }
+  
+  .section-subtitle{
+    margin-bottom:15px;
+  
+    font-size:13px;
+    letter-spacing:2px;
+  
+    text-transform:uppercase;
+  
+    color:#777;
+  }
+  
+  
+  /* =========================
+     CONTACT SECTION
+  ========================= */
+  
+  .contact-section{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  
+    gap:80px;
+  }
+  
+  .contact-left h2{
+    margin-bottom:30px;
+  
+    font-size:65px;
+    line-height:1;
+  
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+  }
+  
+  .contact-description{
+    margin-bottom:40px;
+  
+    line-height:1.9;
+  
+    color:#555;
+  }
+  
+  .contact-info{
+    display:flex;
+    flex-direction:column;
+  
+    gap:25px;
+  
+    margin-bottom:40px;
+  }
+  
+  .info-box h4{
+    margin-bottom:8px;
+  
+    font-size:18px;
+  }
+  
+  .info-box p{
+    color:#555;
+  }
+  
+  .whatsapp-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+  
+    padding:16px 32px;
+  
+    border-radius:50px;
+  
+    background:#111;
+    color:white;
+  
+    text-decoration:none;
+  
+    transition:0.4s ease;
+  }
+  
+  .whatsapp-btn:hover{
+    background:#333;
+  }
+  
+  
+  /* =========================
+     FORM
+  ========================= */
+  
+  .contact-form-wrapper{
+    background:white;
+  
+    padding:50px;
+  
+    border-radius:24px;
+  }
+  
+  .contact-form{
+    display:flex;
+    flex-direction:column;
+  
+    gap:20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea{
+    width:100%;
+  
+    padding:18px;
+  
+    border:none;
+  
+    background:#f3f3f3;
+  
+    font-family:'Inter', sans-serif;
+  }
+  
+  .contact-form button{
+    padding:18px;
+  
+    border:none;
+    border-radius:50px;
+  
+    background:#111;
+    color:white;
+  
+    cursor:pointer;
+  
+    transition:0.4s ease;
+  }
+  
+  .contact-form button:hover{
+    background:#333;
+  }
+  
+  
+  /* =========================
+     MAP
+  ========================= */
+  
+  .map-top{
+    margin-bottom:50px;
+  }
+  
+  .map-top h2{
+    font-size:60px;
+  
+    font-family:'Cormorant Garamond', serif;
+    font-weight:500;
+  }
+  
+  .map-wrapper{
+    width:100%;
+    height:500px;
+  
+    overflow:hidden;
+  
+    border-radius:24px;
+  }
+  
+  .map-wrapper iframe{
+    width:100%;
+    height:100%;
+  
+    border:none;
+  }
+  
+  
+  /* =========================
+     FOOTER
+  ========================= */
+
+  .footer{
+    position:relative;
+  
+    padding:140px 7% 50px;
+  
+    background:#111;
+  
+    overflow:hidden;
+  }
+  
+  
+  /* BIG BACKGROUND TEXT */
+  
+  .footer-bg-text{
+    position:absolute;
+  
+    top:50%;
+    left:50%;
+  
+    transform:translate(-50%, -50%);
+  
+    font-size:220px;
+    font-weight:600;
+  
+    font-family:'Cormorant Garamond', serif;
+  
+    color:rgba(255,255,255,0.03);
+  
+    pointer-events:none;
+  
+    white-space:nowrap;
+  }
+  
+  
+  /* =========================
+     TOP
+  ========================= */
+  
+  .footer-top{
+    position:relative;
+    z-index:2;
+  
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1fr;
+  
+    gap:60px;
+  }
+  
+  
+  /* BRAND */
+  
+  .footer-brand h2{
+    margin-bottom:20px;
+  
+    font-size:42px;
+    letter-spacing:3px;
+  
+    color:white;
+  
+    font-family:'Cormorant Garamond', serif;
+  }
+  
+  .footer-brand p{
+    max-width:400px;
+  
+    font-size:16px;
+    line-height:1.8;
+  
+    color:rgba(255,255,255,0.7);
+  }
+  
+  
+  /* =========================
+     LINKS
+  ========================= */
+  
+  .footer-links,
+  .footer-contact,
+  .footer-socials{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+  }
+  
+  .footer-links h4,
+  .footer-contact h4,
+  .footer-socials h4{
+    margin-bottom:10px;
+  
+    font-size:14px;
+    letter-spacing:2px;
+  
+    text-transform:uppercase;
+  
+    color:rgba(255,255,255,0.4);
+  }
+  
+  
+  /* FOOTER LINKS */
+  
+  .footer a{
+    position:relative;
+  
+    width:fit-content;
+  
+    text-decoration:none;
+  
+    color:white;
+  
+    transition:0.4s ease;
+  }
+  
+  
+  /* UNDERLINE ANIMATION */
+  
+  .footer a::after{
+    content:"";
+  
+    position:absolute;
+  
+    left:0;
+    bottom:-4px;
+  
+    width:0%;
+    height:1px;
+  
+    background:white;
+  
+    transition:0.4s ease;
+  }
+  
+  .footer a:hover::after{
+    width:100%;
+  }
+  
+  .footer a:hover{
+    opacity:0.7;
+  }
+  
+  
+  /* =========================
+     BOTTOM
+  ========================= */
+  
+  .footer-bottom{
+    position:relative;
+    z-index:2;
+  
+    margin-top:120px;
+    padding-top:30px;
+  
+    border-top:1px solid rgba(255,255,255,0.08);
+  }
+  
+  .footer-bottom p{
+    color:rgba(255,255,255,0.5);
+  
+    font-size:14px;
+  }

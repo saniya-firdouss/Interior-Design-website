@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Category | Commercial project</title>
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="../css/template-desktop.css">
+  <link rel="stylesheet" href="../css/template-mobile.css">
+
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500&display=swap"
+    rel="stylesheet"
+  />
+
+</head>
+
+<body>
+
+<!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <nav class="navbar" >
+
+    <div class="logo">
+      FOLKTALE
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="../#projects" >Projects</a></li>
+      <li><a href="../#Catagories">Catagories</a></li>
+      <li><a href="../#about">About</a></li>
+      <li><a href="../pages/Contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+
+  <!-- =========================
+       MOBILE NAV
+  ========================== -->
+
+  <div class="mobile-nav">
+
+    <a href="../index.html">
+  
+      <img src="../icons/home.png" alt="">
+  
+      <span>Home</span>
+  
+    </a>
+  
+  
+    <a href="../pages/projects.html">
+  
+      <img src="../icons/building.png" alt="">
+  
+      <span>Projects</span>
+  
+    </a>
+  
+  
+    <a href="../pages/Contact.html">
+  
+      <img src="../icons/phone-call.png" alt="">
+  
+      <span>Contact</span>
+  
+    </a>
+  
+  
+    <a href="#">
+  
+      <img src="../icons/marker.png" alt="">
+  
+      <span>Location</span>
+  
+    </a>
+  
+  </div>
+
+  <!-- =========================
+       PROJECT HERO
+  ========================== -->
+
+  <section class="project-hero card">    
+    <div class="project-overlay">
+        <div class="project-overlay-text">
+           <p>
+            Commercial Projects
+          </p>
+
+         <h1>
+          Creative Open Workspace Lounge
+           </h1>
+        </div> 
+      </div>
+         <img
+          src="../images/commercial2.png"
+          alt=""
+          />
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       PROJECT DETAILS
+  ========================== -->
+
+  <section class="project-details section">
+
+    <div class="project-details-top">
+
+      <p class="section-subtitle">
+        Project Overview
+      </p>
+
+      <h2>
+        Creative Workspace Lounge Interior.
+      </h2>
+
+    </div>
+
+
+    <div class="project-description">
+
+      <p>
+        This modern workspace lounge interior is designed to create a vibrant and collaborative atmosphere within a commercial setting. Featuring contemporary seating arrangements, artistic lighting elements, greenery accents, and open spatial planning, the design encourages creativity, interaction, and relaxation. The blend of industrial-modern aesthetics with warm textures creates a dynamic environment suitable for informal meetings, brainstorming sessions, and employee engagement.
+
+
+      </p>
+
+      <p>
+The interior emphasizes flexibility and visual comfort through carefully selected furniture, decorative lighting, and modern design details. Natural elements and open layouts contribute to a fresh and energetic ambiance that enhances productivity and workplace experience. This commercial interior project reflects the evolving trend of designing workspaces that balance professionalism with creativity and comfort.
+
+
+      </p>
+     
+    </div>
+    <button>
+        Contact us
+        <img src="../icons/whatsapp.png" alt="">
+     </button>
+  </section>
+
+
+  <!-- =========================
+       IMAGE GALLERY
+  ========================== -->
+
+  <section class="project-gallery section">
+
+    <h2>
+        Gallery
+      </h2>
+
+    <div class="gallery-grid">
+
+      <img
+        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+
+      <img
+        src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+
+      <img
+        src="https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+
+      <img
+        src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop"
+        alt=""
+      />
+
+    </div>
+
+  </section>
+
+
+  <!-- =========================
+       NEXT PROJECT CTA
+  ========================== -->
+
+  <section class="next-project section">
+
+    <p class="section-subtitle">
+      Continue Exploring
+    </p>
+
+    <h2>
+      Discover More <br>
+      Luxury Spaces
+    </h2>
+
+    <a href="../index.html">
+
+      <button>
+        Back To Home
+      </button>
+
+    </a>
+
+  </section>
+<!-- =========================
+     FOOTER
+========================= -->
+<div id="footer"></div>
+<script>
+
+  fetch("../pages/project-footer.html")
+    .then(response => response.text())
+    .then(data => {
+  
+      document.getElementById("footer").innerHTML = data;
+  
+    });
+  
+  </script>
+  <script src="../script.js"></script>
+
+</body>
+
+</html>

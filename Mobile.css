@@ -1,0 +1,299 @@
+@media(max-width:900px){
+
+  /* =========================
+  NAVBAR
+  ========================= */
+  
+  .navbar{
+  justify-content:center;
+  padding:25px 7%;
+  }
+  
+  .logo{
+  position:absolute;
+  
+  left:50%;
+  top:50%;
+  
+  transform:translateX(-50%);
+  
+  font-size:32px;
+  }
+  
+  .nav-links{
+  display:none;
+  }
+  
+  /* =========================
+  MOBILE NAV
+  ========================= */
+  
+  .mobile-nav{
+  position:fixed;
+  
+  bottom:20px;
+  left:50%;
+  
+  transform:translateX(-50%);
+  
+  width:90%;
+  max-width:420px;
+  
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  
+  padding:14px 10px;
+  
+  background:#fffd91c9;
+  
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+  
+  border:1px solid rgba(255,255,255,0.2);
+  
+  border-radius:25px;
+  
+  z-index:2000;
+  }
+  
+  .mobile-nav a{
+  text-decoration:none;
+  color:#000;
+  
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:5px;
+  
+  font-size:11px;
+  
+  opacity:0.85;
+  
+  transition:0.3s ease;
+  }
+  
+  .mobile-nav a:hover{
+  transform:translateY(-3px);
+  opacity:1;
+  }
+  
+  .mobile-nav a:active{
+  transform:scale(0.92);
+  }
+  
+  .mobile-nav img{
+  width:22px;
+  height:22px;
+  
+  object-fit:contain;
+  }
+  
+  /* =========================
+  HERO
+  ========================= */
+  
+  .hero{
+  height:110vh;
+  }
+  
+  .hero-overlay-text{
+  bottom:20%;
+  left:7%;
+  
+  width:85%;
+  }
+  
+  .hero-overlay-text h1{
+  font-size:45px;
+  line-height:1;
+  }
+  
+  .subtitle{
+  font-size:11px;
+  letter-spacing:1.5px;
+  }
+  
+  .hero-overlay-text button{
+  padding:14px 24px;
+  font-size:12px;
+  }
+  
+  .navbar.scrolled .logo{
+  color:#111;
+  }
+  
+  /* =========================
+  GLOBAL SECTION
+  ========================= */
+  
+  .section{
+  padding:50px 7%;
+  }
+  
+  /* =========================
+  ABOUT
+  ========================= */
+  
+  .about{
+  grid-template-columns:1fr;
+  gap:35px;
+  }
+  
+  .about h2{
+  font-size:40px;
+  }
+  
+  .about p{
+  font-size:12px;
+  }
+  
+  /* =========================
+  PROPERTIES
+  ========================= */
+  
+  .properties-top{
+  margin-bottom:45px;
+  }
+  
+  .properties-top h2{
+  font-size:46px;
+  line-height:1;
+  }
+  
+  .slider-track{
+  gap:20px;
+  }
+  
+  .property-card{
+  width:280px;
+  }
+  
+  .property-card img{
+  height:400px;
+  }
+  
+  .property-info h3{
+  font-size:22px;
+  }
+  
+  .property-info p{
+  font-size:13px;
+  }
+  
+  /* =========================
+  ABOUT BANNER
+  ========================= */
+  
+  .about-banner{
+  height:90vh;
+  }
+  
+  .about-overlay{
+  width:88%;
+  
+  padding:40px 30px;
+  }
+  
+  .about-overlay h2{
+  font-size:42px;
+  line-height:1;
+  }
+  
+  .about-description{
+  font-size:14px;
+  line-height:1.8;
+  }
+  
+  .about-btn{
+  margin-top:28px;
+  
+  padding:14px 24px;
+  
+  font-size:12px;
+  }
+  
+  /* =========================
+  CATEGORIES
+  ========================= */
+  
+  .category h1{
+    font-size: 30px;
+  }
+  
+  .category-block{
+  padding-bottom:80px;
+  }
+  
+  .category-info{
+  margin-bottom:35px;
+  }
+  
+  .category-info h3{
+  font-size:38px;
+  }
+  
+  .category-info p{
+  line-height:1.8;
+  }
+  
+  /* =========================
+  PROJECT GRID
+  ========================= */
+  
+  .projects-grid{
+  grid-template-columns:1fr;
+  
+  gap:30px;
+  }
+  
+  .project-card img{
+  height:220px;
+  }
+  
+  .project-card h4{
+  font-size:22px;
+  }
+  
+    
+    /* =========================
+       MAP
+    ========================= */
+    
+    .map-top h2{
+      font-size:42px;
+    }
+    
+    .map-wrapper{
+      height:350px;
+    }
+    /* =========================
+       Last Section
+    ========================= */
+  .ending-cta{
+    padding:120px 7%;
+  }
+
+  .ending-cta h2{
+    font-size:46px;
+    line-height:1;
+  }
+
+  .ending-description{
+    font-size:15px;
+    line-height:1.8;
+  }
+
+  .whatsapp-btn{
+    padding:16px 28px;
+  }
+
+  /* =========================
+  FOOTER
+  ========================= */
+
+  .footer{
+      display:none;
+    }
+  
+}
