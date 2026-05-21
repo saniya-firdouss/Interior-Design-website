@@ -1,0 +1,459 @@
+/* =========================
+RESET
+========================= */
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  }
+  
+  body{
+  font-family:'Inter', sans-serif;
+  background:#f5f1eb;
+  color:#111;
+  overflow-x:hidden;
+  }
+  
+  /* =========================
+  NAVBAR
+  ========================= */
+  
+  .navbar{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  
+  padding:30px 7%;
+  
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  
+  transition:all 0.4s ease;
+  
+  z-index:1000;
+  }
+  
+  .logo{
+  font-size:28px;
+  letter-spacing:3px;
+  
+  font-family:'Cormorant Garamond', serif;
+  
+  color:white;
+  
+  user-select:none;
+  }
+  
+  .nav-links{
+  display:flex;
+  gap:40px;
+  
+  list-style:none;
+  }
+  
+  .nav-links a{
+  text-decoration:none;
+  color:white;
+  
+  font-size:14px;
+  letter-spacing:1px;
+  }
+  
+  /* =========================
+  SCROLLED NAVBAR
+  ========================= */
+  
+  .navbar.scrolled .logo{
+  color:#111;
+  }
+  
+  .navbar.scrolled .nav-links a{
+  color:#111;
+  }
+  
+  /* =========================
+  MOBILE NAV
+  ========================= */
+  
+  .mobile-nav{
+  display:none;
+  }
+  
+  /* =========================
+  GLOBAL SECTION
+  ========================= */
+  
+  .section{
+  padding:80px 7%;
+  }
+  
+  .section-subtitle{
+  margin-bottom:15px;
+  
+  font-size:13px;
+  letter-spacing:2px;
+  
+  text-transform:uppercase;
+  
+  color:#777;
+  }
+  
+  /* =========================
+  PROJECT HERO
+  ========================= */
+  
+  .project-hero{
+  position:relative;
+  
+  width:100%;
+  height:100vh;
+  
+  padding:20px;
+  
+  overflow:hidden;
+  }
+  
+  .project-hero.card{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  align-items:center;
+  
+  gap:35px;
+  }
+  
+  .project-hero img{
+  width:100%;
+  height:100%;
+  
+  object-fit:cover;
+  
+  border-radius:18px;
+  }
+  
+  /* =========================
+  PROJECT OVERLAY
+  ========================= */
+  
+  .project-overlay{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  
+  color:black;
+  }
+  
+  .project-overlay p{
+  margin-bottom:20px;
+  
+  font-size:14px;
+  letter-spacing:2px;
+  
+  text-transform:uppercase;
+  }
+  
+  .project-overlay h1{
+  font-size:50px;
+  line-height:1;
+  font-weight:500;
+  
+  font-family:'Cormorant Garamond', serif;
+  }
+  
+  /* =========================
+  PROJECT DETAILS
+  ========================= */
+  
+  .project-details-top{
+  margin-bottom:70px;
+  }
+  
+  .project-details-top h2{
+  font-size:72px;
+  line-height:1;
+  
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  }
+  
+  .project-description{
+  max-width:900px;
+  
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  
+  gap:60px;
+  }
+  
+  .project-description p{
+  font-size:18px;
+  line-height:1.9;
+  
+  color:#444;
+  }
+  
+  .project-details.section button{
+  margin:40px auto 0;
+  
+  width:165px;
+  height:40px;
+  
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  
+  border:none;
+  border-radius:20px;
+  
+  background:white;
+  
+  font-size:14px;
+  font-weight:500;
+  
+  cursor:pointer;
+  
+  transition:0.4s ease;
+  }
+  
+  .project-details.section button:hover{
+  background:#111;
+  color:white;
+  }
+  
+  .project-details.section button img{
+  width:20px;
+  height:20px;
+  
+  object-fit:contain;
+  }
+  
+  /* =========================
+  GALLERY
+  ========================= */
+  
+  .project-gallery.section h2{
+  margin:20px;
+  
+  font-size:35px;
+  
+  text-align:center;
+  }
+  
+  .gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  
+  gap:30px;
+  }
+  
+  .gallery-grid img{
+  width:100%;
+  height:300px;
+  
+  object-fit:cover;
+  
+  border-radius:20px;
+  }
+  
+  /* =========================
+  NEXT PROJECT
+  ========================= */
+  
+  .next-project{
+  text-align:center;
+  }
+  
+  .next-project h2{
+  margin-bottom:40px;
+  
+  font-size:72px;
+  line-height:1;
+  
+  font-family:'Cormorant Garamond', serif;
+  font-weight:500;
+  }
+  
+  .next-project button{
+  padding:16px 32px;
+  
+  border:none;
+  border-radius:50px;
+  
+  background:#111;
+  color:white;
+  
+  cursor:pointer;
+  
+  transition:0.4s ease;
+  }
+  
+  .next-project button:hover{
+    background-color: #777;
+  }
+  
+  /* =========================
+  FOOTER
+  ========================= */
+  
+.footer{
+  position:relative;
+
+  padding:140px 7% 50px;
+
+  background:#111;
+
+  overflow:hidden;
+}
+
+
+/* BIG BACKGROUND TEXT */
+
+.footer-bg-text{
+  position:absolute;
+
+  top:50%;
+  left:50%;
+
+  transform:translate(-50%, -50%);
+
+  font-size:220px;
+  font-weight:600;
+
+  font-family:'Cormorant Garamond', serif;
+
+  color:rgba(255,255,255,0.03);
+
+  pointer-events:none;
+
+  white-space:nowrap;
+}
+
+
+/* =========================
+   TOP
+========================= */
+
+.footer-top{
+  position:relative;
+  z-index:2;
+
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr 1fr;
+
+  gap:60px;
+}
+
+
+/* BRAND */
+
+.footer-brand h2{
+  margin-bottom:20px;
+
+  font-size:42px;
+  letter-spacing:3px;
+
+  color:white;
+
+  font-family:'Cormorant Garamond', serif;
+}
+
+.footer-brand p{
+  max-width:400px;
+
+  font-size:16px;
+  line-height:1.8;
+
+  color:rgba(255,255,255,0.7);
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links,
+.footer-contact,
+.footer-socials{
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-socials h4{
+  margin-bottom:10px;
+
+  font-size:14px;
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  color:rgba(255,255,255,0.4);
+}
+
+
+/* FOOTER LINKS */
+
+.footer a{
+  position:relative;
+
+  width:fit-content;
+
+  text-decoration:none;
+
+  color:white;
+
+  transition:0.4s ease;
+}
+
+
+/* UNDERLINE ANIMATION */
+
+.footer a::after{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  bottom:-4px;
+
+  width:0%;
+  height:1px;
+
+  background:white;
+
+  transition:0.4s ease;
+}
+
+.footer a:hover::after{
+  width:100%;
+}
+
+.footer a:hover{
+  opacity:0.7;
+}
+
+
+/* =========================
+   BOTTOM
+========================= */
+
+.footer-bottom{
+  position:relative;
+  z-index:2;
+
+  margin-top:120px;
+  padding-top:30px;
+
+  border-top:1px solid rgba(255,255,255,0.08);
+}
+
+.footer-bottom p{
+  color:rgba(255,255,255,0.5);
+
+  font-size:14px;
+}
